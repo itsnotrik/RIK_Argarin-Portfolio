@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio Resume</h1>
+    </header>
+    <nav>
+        <a href="#home" onclick="showTab('home')">Home</a>
+        <a href="#about-me" onclick="showTab('about-me')">About Me</a>
+        <a href="#skills" onclick="showTab('skills')">Skills</a>
+        <a href="#education" onclick="showTab('education')">Education</a>
+        <a href="#experience" onclick="showTab('experience')">Experience</a>
+        <a href="#projects" onclick="showTab('projects')">Projects</a>
+
+    </nav>
+    <section>
+        <div id="home" class="tab-content active">
+            <section class="home-container">
+                <div class="intro">
+                    <h1>Hello, I'm Rik Argarin!</h1>
+                    <h3>Aspiring IT Professional</h3>
+                    <p>My name is RiK Danielle Argarin, a recent BSIT-System Engineering graduate from Colegio De San Juan De Letran. 
+                        I'm passionate about creating user-friendly websites and solving real-world problems through technology.
+                         Explore my work and let's connect!</p>
+                    <div class="cta-buttons">
+                        <button onclick="showTab('about-me')" class="btn">About Me</button>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/itsnotrik" target="_blank" class="social-icon">
+                            <img src="img/facebook-icon.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/itsnotrikkk" target="_blank" class="social-icon">
+                            <img src="img/instagram-icon.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/in/rik-curry-9143282aa/" target="_blank" class="social-icon">
+                            <img src="img/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/itsnotrik" target="_blank" class="social-icon">
+                            <img src="img/github-icon.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-photo">
+                    <img src="profile.jpg" alt="Your Profile Photo">
+                </div>
+            </section>
+        </div>
+
+        <div id="about-me" class="tab-content">
+            <section class="about-container">
+                <div class="profile-photo">
+                    <img src="profile.jpg" alt="Your Profile Photo">
+                </div>
+                <div class="about-details">
+                    <h2>About Me</h2>
+                    <p><strong>Email:</strong> <a href="mailto:iamrikcurry@gmail.com">iamrikcurry@gmail.com</a></p>
+                    <p><strong>Role:</strong> <span id="typing-role"></span></p>
+<p><strong>Phone:</strong> 09777003854 </p>
+<p><strong>Address:</strong> 5067 General Malvar Street South cembo Makati City</p>
+
+<!-- Fun Fact Section -->
+<div class="fun-facts">
+    <p id="funFact"></p>
+</div>
+
+<!-- Toggleable Extended Bio -->
+<div id="extraBio" style="display: none;">
+    <p>I love combining creativity with technical skills to create impactful digital solutions. Whether it's building web projects or troubleshooting networks, I always aim to deliver value and learn something new.</p>
+</div>
+<button onclick="toggleBio()" class="btn">Read more</button>
+
+
+
+                    <p><strong>Phone:</strong> 09777003854 </p>
+                    <p><strong>Address:</strong> 5067 General Malvar Street South cembo Makati City</p>
+                     <a href="files/my-cv.pdf" download="My_CV" class="btn download-cv">Download CV</a>
+
+                    
+                    </a>
+                </div>
+            </section>
+        </div>
+        
+
+        <div id="skills" class="tab-content">
+            <section class="skills-container">
+                <h2>What I Do</h2>
+                <p>I am an IT enthusiast aiming to excel in software development and system design. 
+                    I have hands on experience in various programming languages and tools that enhance my problem-solving skills and creativity. I also
+                have interest in my Major specialist from College. Configuring like Networking, Cloud Computing and Cybersecurity</p>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="img/html.png" alt="HTML">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/css-icon.png" alt="CSS">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/php-icon.png" alt="PHP">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/bootstrap-icon.png" alt="Bootstrap">
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/github-icon.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/mysql-icon.png" alt="MYSql">
+                        <span>MYSql</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/cybersecurity-icon.png" alt="Cybersecurity ">
+                        <span>Cybersecurity </span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/cisco-icon.png" alt="Cisco Packet Tracer">
+                        <span>Cisco Packet Tracer</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="img/cloud computing-icon.png" alt="Cloud Computing">
+                        <span>Photoshop</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+      <div id="education" class="tab-content">
+    <section class="education-container">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <!-- College School -->
+            <div class="education-card">
+                <img src="img/letran-icon.png" alt="Letran Logo">
+                <div class="education-details">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p>August 2021 - Present</p>
+                    <p><strong>Relevant Coursework:</strong> MySQL Databases, System Engineering</p>
+                </div>
+            </div>
+
+            <!-- Senior High School -->
+            <div class="education-card">
+                <img src="img/sti-logo.png" alt="STI Logo">
+                <div class="education-details">
+                    <h3>Senior High School (STI Global City)</h3>
+                    <p>July 2019 - May 2021</p>
+                    <p><strong>Relevant Coursework:</strong> Basic Calculus, Pre-Calculus</p>
+                </div>
+            </div>
+
+            <!-- Junior High -->
+            <div class="education-card">
+                <img src="img/fortridge-logo.png" alt="Fortbridge Logo">
+                <div class="education-details">
+                    <h3>Junior High School</h3>
+                    <p>July 2015 - May 2019</p>
+                </div>
+            </div>
+
+            <!-- Elementary -->
+            <div class="education-card">
+                <img src="img/precious-icon.png" alt="Precious Values School Logo">
+                <div class="education-details">
+                    <h3>Elementary (Precious Values School)</h3>
+                    <p>June 2009 - March 2014</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Online Certifications</h2>
+        <div class="certification-grid">
+            <a href="https://www.credly.com/badges/cd8c4949-f064-4d8f-a37c-8294aae8e1d2/public_url" target="_blank" class="certification-card">
+                <img src="img/credly.png" alt="Cyber Threat Management">
+                <p>Cisco Networking Academy - Cyber Threat Management</p>
+            </a>
+            <a href="https://www.credly.com/badges/6cfee227-0900-4c8c-8fcf-053db8700cbf/public_url" target="_blank" class="certification-card">
+                <img src="img/pearson.png" alt="IT Networking">
+                <p>IT Specialist - Networking</p>
+            </a>
+            <a href="https://www.credly.com/badges/9ee2b0d3-d86f-4418-88ef-f1d48bfd52c3/public_url" target="_blank" class="certification-card">
+                <img src="img/data sci.png" alt="Intro to Data Science">
+                <p>Cisco Networking Academy - Introduction to Data Science</p>
+            </a>
+            <a href="https://www.credly.com/badges/6ed88660-d033-4e53-86bb-4d56259080d3/public_url" target="_blank" class="certification-card">
+                <img src="img/cybersec.png" alt="Introduction to Cybersecurity">
+                <p>Introduction to Cybersecurity</p>
+            </a>
+        </div>
+    </section>
+</div>
+
+<div id="projects" class="tab-content">
+    <section class="projects-container">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I've worked on, showcasing my skills in development, problem-solving, and creativity.</p>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+                    <div class="project-card">
+                <img src="img/project/project1.jfif" alt="Law Firm Website">
+                <div class="project-info">
+                    <h3>Law Firm Website (HTML, PHP, CSS)</h3>
+                    <p>A responsive website for a fictional law firm with pages like Home, Practice Areas, About Us, Contact Form, and Admin Dashboard.</p>
+                    <a href="https://github.com/itsnotrik/Law-Firm-Website-HTML-PHP-CSS-" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="img/project/project2.jfif" alt="Resume Ranker Python NLP">
+                <div class="project-info">
+                    <h3>Resume/CV Ranker (Python + NLP)</h3>
+                    <p>A tool that ranks job applicants’ resumes using NLP and keyword matching to help streamline recruitment processes.</p>
+                    <a href="https://github.com/itsnotrik/Resume-CV-Ranker-Python-NLP-" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+             <div class="project-card">
+                <img src="img/project/project3.jfif" alt="Client Appointment Scheduler">
+                <div class="project-info">
+                    <h3>Client Appointment Scheduler (C++)</h3>
+                    <p>A console-based application for managing client appointments with login access for users and admins, appointment sorting, and validation.</p>
+                    <a href="https://github.com/itsnotrik/Client-Appointment-Scheduler-C-" target="_blank" class="btn">View on GitHub</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+<div id="experience" class="tab-content">
+    <section class="experience-container">
+        <h2>Experience</h2>
+        <div class="experience-card">
+            <h3>IT Intern</h3>
+            <p><strong>Company:</strong> Value Care Health Systems, Inc. (ValuCare)</p>
+            <p><strong>Duration:</strong> 500 hours | Jan 2024 – June 2024</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Assisted with front-end development and UI improvements for internal tools.</li>
+                <li>Provided basic coding, testing, and debugging support for live systems.</li>
+                <li>Helped with network troubleshooting and technical support tasks.</li>
+                <li>Documented processes and collaborated with the IT team on real-world issues.</li>
+            </ul>
+        </div>
+
+        <div class="experience-photos">
+            <h3></h3>
+            <div class="experience-gallery">
+                <div class="experience-image">
+                    <img src="img/building.png" alt="ValuCare Building">
+                    <p class="caption">ValuCare Head Office</p>
+                </div>
+                <div class="experience-image">
+                    <img src="img/tean.jfif" alt="Rik with ValuCare Staff">
+                    <p class="caption">Me with the IT Team at ValuCare</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Show the selected tab content
+            const activeTab = document.getElementById(tabId);
+            activeTab.classList.add('active');
+        }
+    </script>
+
+
+<script>
+    // Typewriter effect for role
+    const roleText = "Aspiring IT Professional";
+    let roleIndex = 0;
+    function typeRole() {
+        if (roleIndex < roleText.length) {
+            document.getElementById("typing-role").innerHTML += roleText.charAt(roleIndex);
+            roleIndex++;
+            setTimeout(typeRole, 100);
+        }
+    }
+
+    // Rotating Fun Facts
+    const facts = [
+        "💻 I love building things from scratch.",
+        "🌐 Cybersecurity and networking are my strong suits.",
+        "📚 Lifelong learner in tech and beyond.",
+        "⚙️ I enjoy problem-solving and debugging.",
+        "🎨 I use Photoshop for fun and freelance."
+    ];
+    let factIndex = 0;
+    function rotateFacts() {
+        document.getElementById("funFact").textContent = facts[factIndex];
+        factIndex = (factIndex + 1) % facts.length;
+        setTimeout(rotateFacts, 4000); // change every 4 seconds
+    }
+
+    // Toggle extra bio visibility
+    function toggleBio() {
+        const extraBio = document.getElementById("extraBio");
+        const button = event.target;
+        if (extraBio.style.display === "none") {
+            extraBio.style.display = "block";
+            button.textContent = "Read less";
+        } else {
+            extraBio.style.display = "none";
+            button.textContent = "Read more";
+        }
+    }
+
+    // Trigger typing and facts only when About Me tab is clicked
+    document.querySelector("a[href='#about-me']").addEventListener("click", function () {
+        // reset and re-type role text
+        document.getElementById("typing-role").textContent = "";
+        roleIndex = 0;
+        typeRole();
+
+        // rotate facts
+        rotateFacts();
+    });
+</script>
+
+</body>
+</html>
